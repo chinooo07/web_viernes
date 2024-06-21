@@ -83,15 +83,20 @@ footer{
     background-color: rgba(14, 6, 85, 0.575);
     border: 5px solid;
     padding: 25px;
- 
+   max-width: 1000px;
+    
+}
     
  
-}
+
 
 .padre{
     background-color: rgb(31, 6, 78);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    
+    
     
         
     
@@ -118,17 +123,45 @@ footer{
    } 
     
    .parent {
+    
     background-color: rgb(47, 5, 87);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 12px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 3; }
-    .div2 { grid-area: 2 / 1 / 3 / 2; }
-    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 3; 
+    
+    }
+    .div1 img{
+    width: 100%;
+    
+
+    }
+    .div2 {
+         grid-area: 2 / 1 / 3 / 2; 
+        width: 100%;
+        }
+    .div2 img{ 
+    width: 100%;
+    
+        }
+
+    .div3 {
+        grid-area: 2 / 2 / 3 / 3; 
+    width: 100%;
+    }
+    .div3 img{
+        width: 100%;
+        
+    }
+
+
 
   
 
